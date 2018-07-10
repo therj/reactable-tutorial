@@ -1,35 +1,17 @@
 import React, { Component } from 'react'
 import './App.css'
-import { Table, Tr } from 'reactable'
+import Table from './Table.js'
+import TableHead from './TableHead.js'
+import Tr from './Tr.js'
+import Td from './Td.js'
+import TFoot from './TFoot.js'
+// import Table from './Table.js'
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Table
-          className="table"
-          data={[
-            {
-              Name: 'Griffin Smith',
-              Age: 18,
-            },
-            {
-              Age: 23,
-              Name: 'Lee Salminen',
-            },
-            {
-              Age: 28,
-              Position: 'Developer',
-            },
-          ]}
-        >
-          <Tr
-            data={{
-              Name: 'Special Person',
-              Position: 'Legendary!',
-              Age: 'Infinite',
-            }}
-          />
-        </Table>
+        {/* render whatever you want to try -> Table, Tr, Td  */}
+        <TFoot />
       </div>
     )
   }
