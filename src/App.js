@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
-import { Table } from 'reactable'
+import { Table, Tr } from 'reactable'
 class App extends Component {
   render() {
     return (
@@ -8,11 +8,28 @@ class App extends Component {
         <Table
           className="table"
           data={[
-            { Name: 'Griffin Smith', Age: 18 },
-            { Age: 23, Name: 'Lee Salminen' },
-            { Age: 28, Position: 'Developer' },
+            {
+              Name: 'Griffin Smith',
+              Age: 18,
+            },
+            {
+              Age: 23,
+              Name: 'Lee Salminen',
+            },
+            {
+              Age: 28,
+              Position: 'Developer',
+            },
           ]}
-        />
+        >
+          <Tr
+            data={{
+              Name: 'Special Person',
+              Position: 'Legendary!',
+              Age: 'Infinite',
+            }}
+          />
+        </Table>
       </div>
     )
   }
