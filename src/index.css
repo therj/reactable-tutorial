@@ -28,3 +28,19 @@ td {
   border: 1px solid #373737;
   padding: 10px;
 }
+
+.reactable-page-button,
+.reactable-next-page,
+.reactable-previous-page {
+  padding: 3px;
+  margin: 4px;
+  border: 1px solid cadetblue;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #373737;
+  background-color: burlywood;
+}
+
+.reactable-current-page {
+  background-color: #fff;
+}
