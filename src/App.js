@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
 import './App.css'
-import Table from './Table.js'
-import TableHead from './TableHead.js'
-import Tr from './Tr.js'
-import Td from './Td.js'
-import TFoot from './TFoot.js'
+import Table from './Table'
+import TableHead from './TableHead'
+import Tr from './Tr'
+import Td from './Td'
+import TFoot from './TFoot'
 import UnsafeTable from './UnsafeTable'
 import Pagination from './Pagination'
 import Sorting from './Sorting'
-// import Table from './Table.js'
+import Filtering from './Filtering'
 class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* render whatever you want to try -> Table, Tr, Td  */}
-        <Sorting />
+        {/* render whatever you want to try -> Table, Tr, Td, UnsafeTable, Pagination, Filtering...  */}
+        <Table />
       </div>
     )
   }
